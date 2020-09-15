@@ -5,6 +5,12 @@ import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import static android.provider.BaseColumns._ID;
+import static com.jiwon.a2wordoftoday2.WordsOfTodayContract.TABLE_NAME;
+import static com.jiwon.a2wordoftoday2.WordsOfTodayContract.WordsOfTodayColumns.DAtE;
+import static com.jiwon.a2wordoftoday2.WordsOfTodayContract.WordsOfTodayColumns.NAME;
+import static com.jiwon.a2wordoftoday2.WordsOfTodayContract.WordsOfTodayColumns.WORDS;
+
 public class WordsOfTodayDbHelper extends SQLiteOpenHelper {
 
     private static final String TAG = WordsOfToday.class.getSimpleName();
