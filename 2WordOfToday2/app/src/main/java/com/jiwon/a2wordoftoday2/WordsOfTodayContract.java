@@ -16,6 +16,6 @@ public interface WordsOfTodayContract {
     public interface WordsOfTodayColumns extends BaseColumns{
         public static final String NAME = "name";
         public static final String WORDS = "words";
-        public static final String DAtE = "date";
+        public static final String DATE = "date";
     }
 }
