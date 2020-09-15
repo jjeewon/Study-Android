@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import static android.provider.BaseColumns._ID;
 import static com.jiwon.a2wordoftoday2.WordsOfTodayContract.TABLE_NAME;
@@ -33,7 +34,16 @@ public class WordsOfTodayDbHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db){
-
+        Log.d(TAG,"onCreate");
+        db.beginTransaction();
+        try{
+            execSQL(db,SQL_CREATE_TABLE);
+            for(String sql : SQL_INSERT_INITIAL_DATA){
+                execSQL(db,sql);
+            }
+        }finally {
+            db.endTransaction();
+        }
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
