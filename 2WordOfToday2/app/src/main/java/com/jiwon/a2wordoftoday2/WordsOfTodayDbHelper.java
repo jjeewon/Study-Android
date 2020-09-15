@@ -7,6 +7,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class WordsOfTodayDbHelper extends SQLiteOpenHelper {
 
+    private static final String TAG = WordsOfToday.class.getSimpleName();
+    public static final String DB_NAME = "WordsOfToday.db";
+    public static final int DB_VERSION = 1;
+
+
     public WordsOfTodayDbHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version, DatabaseErrorHandler errorHandler){
         super(context, name, factory, version, errorHandler);
     }
