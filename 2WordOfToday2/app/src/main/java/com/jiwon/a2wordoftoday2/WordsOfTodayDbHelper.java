@@ -47,15 +47,16 @@ public class WordsOfTodayDbHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
-
+        Log.d(TAG,"onUpgrade oldVersion : "+oldVersion+",newVersion : "+newVersion);
     }
     @Override
     public void onOpen(SQLiteDatabase db){
         super.onOpen(db);
+        Log.d(TAG,"onOpen");
     }
 
     private void execSQL(SQLiteDatabase db, String sql){
-
+        Log.d(TAG,"execSQL sql = "+sql);
         db.execSQL(sql);
     }
 }
