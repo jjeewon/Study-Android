@@ -1,15 +1,23 @@
 package com.jiwon.flatversion;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.BitmapImageViewTarget;
+
 import java.util.List;
 
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class RepositoryAdapter  {
+public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.RepoViewHolder>{
     public final OnRepositoryItemClickListener onRepositoryItemClickListener;
     public final Context context;
     private List<GitHubService.RepositoryItem> items;
@@ -17,6 +25,52 @@ public class RepositoryAdapter  {
     public RepositoryAdapter(Context context, OnRepositoryItemClickListener onRepositoryItemClickListener){
         this.context = context;
         this.onRepositoryItemClickListener = onRepositoryItemClickListener;
+    }
+
+    /**
+     * RecyclerView의 아이템 뷰 생성과 뷰를 유지할 ViewHolder를 생성
+     */
+    @Override
+    public RepoViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+        final View view = LayoutInflater.from(context).inflate(R.layout.repo_item,parent,false);
+        return new RepoViewHolder(view);
+    }
+    @Override
+    public void onBindViewHolder(final RepoViewHolder holder, final int position){
+        final GitHubService.RepositoryItem item = getItemAt(position);
+
+        // 뷰가 클릭되면 클릭된 아이템을 Listener에게 알린다
+        holder.itemView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                onRepositoryItemClickListener.onRepositoryItemClick(item);
+            }
+        });
+
+        holder.repoName.setText(item.name);
+        holder.repoDetail.setText(item.description);
+        holder.starCount.setText(item.stargazers_count);
+        // 이미는 Glide라는 라이브러리로 데이터로 설정한다.
+        Glide.with(context)
+                .load(item.owner.avatar_url)
+                .asBitmap().centerCrop().into(new BitmapImageViewTarget(holder.repoImage) {
+            @Override
+            protected void setResource(Bitmap resource) {
+                // 이미지를 동그랗게 만든다
+                RoundedBitmapDrawable circularBitmapDrawable =
+                        RoundedBitmapDrawableFactory.create(context.getResources(), resource);
+                circularBitmapDrawable.setCircular(true);
+                holder.repoImage.setImageDrawable(circularBitmapDrawable);
+            }
+        });
+    }
+
+    @Override
+    public int getItemCount(){
+        if(items == null){
+            return 0;
+        }
+        return items.size();
     }
 
     /**
