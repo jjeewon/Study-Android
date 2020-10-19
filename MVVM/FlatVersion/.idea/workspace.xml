@@ -10,52 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94c3a112-e385-4168-95c8-239276a49780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/androidTest/java/com/jiwon/gradlesamples/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/java/com/jiwon/gradlesamples/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/app/src/test/java/com/jiwon/gradlesamples/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GradleSamples/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataBindingSample/app/src/main/java/com/jiwon/databindingsample/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataBindingSample/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DataBindingSample/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiwon/flatversion/DetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiwon/flatversion/DetailActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiwon/flatversion/GitHubService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiwon/flatversion/GitHubService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiwon/flatversion/RepositoryListAcitivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiwon/flatversion/RepositoryListAcitivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_repository_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_repository_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +23,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="R39N400YSDE" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -331,6 +288,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.4427754" />
