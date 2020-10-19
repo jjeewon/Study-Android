@@ -19,7 +19,7 @@ public interface GitHubService {
      * @return API 액세스 결과 취득 후의 콜백 - SearchResponse를 가져올 수 있는 RxJava의 Observable로 반환
      */
     @GET("search/repositories?sort=stars&order=desc")
-    Observer<Repositories> listRepos(@Query("q") String query);
+    Observable<Repositories> listRepos(@Query("q") String query);
 
     /**
      * 레포지토리의 상세 내역을 가져온다.

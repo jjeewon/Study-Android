@@ -120,6 +120,6 @@ public class DetailActivity extends AppCompatActivity {
         ownerImage.setOnClickListener(listener);
         }
 
-    }
+
 
 }
