@@ -5,9 +5,9 @@ android {
     signingConfigs{
         release{
             storeFile file("release.keystore")
-            storePassword "xxxxxxx"
-            keyAlias "androidreleasekey"
-            keyPassword "xxxxxxxx"
+            storePassword "sample"
+            keyAlias "android"
+            keyPassword "sample"
         }
     }
     defaultConfig {
@@ -21,17 +21,42 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // 1. 서명 설정.
+            signingConfig signingConfigs.release
+            // 2. 프로가드를 활성화한다.
+            minifyEnabled true
+            // 프로가드 설정 파일을 지정한다.
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            // 3. 패키지 이름 끝에 .debug를 추가한다.
+            applicationIdSuffix ".debug"
+            // 4. 버전 이름 끝에 -debug를 붙인다.
+            versionNameSuffix "-debug"
+        }
+        stage{
+            // 5. debug 설정을 이용해 stage 빌드 타입을 만든다.
+            initWith(buildTypes.debug)
         }
     }
+    flavorDimensions "free"
+    productFlavors{
+        free{
+
+        }
+        pro{
+
+        }
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'com.android.support:appcompat-v7:28.3.0'
+    implementation 'com.android.support:cardview-v7:28.3.0'
+    implementation 'com.android.support:design:28.3.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+
 }

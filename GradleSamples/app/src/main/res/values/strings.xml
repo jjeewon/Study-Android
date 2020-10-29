@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GradleSamples</string>
+    <string name="action_settings">Settings</string>
+    <string name="api_uri">http://example.com/production.json</string>
 </resources>
